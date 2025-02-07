@@ -13,7 +13,6 @@ const ProductSection = () => {
       setProd(res.data.data);
     });
   };
-  console.log(prod);
 
   return (
     <div className="px-10 md:px-10 ">

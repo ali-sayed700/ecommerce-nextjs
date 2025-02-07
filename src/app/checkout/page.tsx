@@ -15,7 +15,7 @@ function Checkout() {
     // passing the client secret obtained from the server
     mode: "payment",
     currency: "usd",
-    amount: 100,
+    amount: Number(searchParams.get("amount")) * 100,
   };
 
   return (
