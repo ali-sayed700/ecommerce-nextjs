@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 // import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
@@ -33,8 +33,7 @@ export default function RootLayout({
         <html lang="en">
           <body className={`${newFont.className}`}>
             <Header />
-
-            {children}
+            <Suspense>{children}</Suspense>
             <Footer />
           </body>
         </html>
